@@ -1,4 +1,4 @@
-![Screenshot 2025-03-14 102353](https://github.com/user-attachments/assets/dbd13574-4edb-43e9-8f45-90496eace01c)##  Configuring Python to use the SNAP-Python (esa_snappy) Interface (SNAP Version 10+) 
+##  Configuring Python to use the SNAP-Python (esa_snappy) Interface (SNAP Version 10+) 
 
 ## Access to the esa_snappy Plugin
 The `esa_snappy` plugin is a dedicated SNAP module. The corresponding source code is available on GitHub.
