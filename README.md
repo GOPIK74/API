@@ -240,7 +240,12 @@ Text(0.5, 1.0, 'Visualization of radiance_1')
 
 
 ## Orginal Resources 
-- SNAP Documentation: [https://step.esa.int](https://step.esa.int)
-- ESA SNAP Forum: [https://forum.step.esa.int](https://forum.step.esa.int)
-- snappy Configrastion: [https://senbox.atlassian.net/wiki/spaces/SNAP/pages/2499051521/Configure+Python+to+use+the+SNAP-Python+esa_snappy+interface+SNAP+version+10]
+Official SNAP Documentation 📚 – Learn about ESA SNAP’s capabilities and features.
+🔗  [https://step.esa.int](https://step.esa.int)
+
+Join the ESA SNAP Community 💬 – Discuss, troubleshoot, and get expert help.
+🔗[https://forum.step.esa.int](https://forum.step.esa.int)
+
+Step-by-Step Guide: Configuring ESA SNAP with Python ⚙️ – Set up esa_snappy for seamless integration.
+🔗 [https://senbox.atlassian.net/wiki/spaces/SNAP/pages/2499051521/Configure+Python+to+use+the+SNAP-Python+esa_snappy+interface+SNAP+version+10]
 
