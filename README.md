@@ -32,7 +32,7 @@ Before you should install the SNAP software on your system, I would recommend cr
 python version 3.6-3.10 by executing the command below on your system’s python configured command line tool.
 
 ```sh
-$conda create -n snap python=3.10
+$conda create -n YourEnv python=3.10
 ```
 
 #SNAP Installation
@@ -122,6 +122,34 @@ p = ProductIO.readProduct('esa_snappy/testdata/MER_FRS_L1B_SUBSET.dim')
 print(list(p.getBandNames()))
 ```
 
+
+
+## Making esa_snappy Available to Python
+### 1. Install Permanently (Recommended)
+```sh
+$ cd <esa_snappy-dir>/esa_snappy
+$ <python-exe> setup.py install
+```
+### 2. Set PYTHONPATH Temporarily
+```sh
+export PYTHONPATH=$PYTHONPATH:<esa-snappy-dir>   # Unix
+set PYTHONPATH=%PYTHONPATH%;<esa-snappy-dir>    # Windows
+```
+
+### 3. Append to sys.path in Python Script
+```python
+import sys
+sys.path.append('<esa-snappy-dir>')
+import esa_snappy
+```
+
+## Changing Memory Settings
+To modify memory allocation, edit `esa_snappy.ini` inside `<esa-snappy-dir>/esa_snappy`:
+```sh
+java_max_mem: 10G  # Set to 70%-80% of available RAM
+```
+
+
 ## Testing Code for SAR Data Visualization and Information Extraction  
 
 **Note:** Use the existing configured Python environment terminal.
@@ -208,34 +236,6 @@ Text(0.5, 1.0, 'Visualization of radiance_1')
 
 ```
 ![Figure_1](https://github.com/user-attachments/assets/563e5e69-1fa5-4158-9690-64366fdf0f0f)
-
-
-## Making esa_snappy Available to Python
-### 1. Install Permanently (Recommended)
-```sh
-$ cd <esa_snappy-dir>/esa_snappy
-$ <python-exe> setup.py install
-```
-### 2. Set PYTHONPATH Temporarily
-```sh
-export PYTHONPATH=$PYTHONPATH:<esa-snappy-dir>   # Unix
-set PYTHONPATH=%PYTHONPATH%;<esa-snappy-dir>    # Windows
-```
-
-### 3. Append to sys.path in Python Script
-```python
-import sys
-sys.path.append('<esa-snappy-dir>')
-import esa_snappy
-```
-
-## Changing Memory Settings
-To modify memory allocation, edit `esa_snappy.ini` inside `<esa-snappy-dir>/esa_snappy`:
-```sh
-java_max_mem: 10G  # Set to 70%-80% of available RAM
-```
-
-
 
 
 
